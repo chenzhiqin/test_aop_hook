@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical" >
+    
+	    <Button
+	        android:id="@+id/btn_alpha"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="alpha" />
+	
+	    <Button
+	        android:id="@+id/btn_scale"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="scale" />
+	    <Button
+	        android:id="@+id/btn_translate"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="translate" />
+	    <Button
+	        android:id="@+id/btn_rotate"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="rotate" />
+	    <Button
+	        android:id="@+id/btn_fragment"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="fragment" />
+	    
+	    <Button
+	        android:id="@+id/btn_mode"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="launchmode" />
+	    <Button
+	        android:id="@+id/btn_dialog_activity"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="dialog_activity" />
+	    <Button
+	        android:id="@+id/btn_remote_call"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="remote call" />
+	    <Button
+	        android:id="@+id/btn_notification"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Notification" />    
+        <Button
+            android:id="@+id/btn_taskroot"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="IsTaskRoot?" />     
+            
+        <Button
+            android:id="@+id/btn_wifi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="test wifi" /> 
+            
+        <Button
+            android:id="@+id/btn_wm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="WindowManagerTest" /> 
+        <Button
+            android:id="@+id/btn_datadir"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Data Dir" />
+        <Button
+            android:id="@+id/btn_pkgmgr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="PackageManager Test" /> 
+        <Button
+            android:id="@+id/btn_activitymgr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="ActivityManager Test" />          
+       <Button
+            android:id="@+id/btn_alarm_send_intent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="alarm send intent" />         
+      <Button
+            android:id="@+id/btn_notification_remote_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Notification RemoteView" />         
+      <Button 
+          android:id="@+id/btn_tab_activity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Test tab Actvity" 
+          />
+      <Button 
+          android:id="@+id/btn_test_receiver"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Test receiver" 
+          />
+      <Button 
+          android:id="@+id/btn_test_popup_window"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Test popup window" 
+          />
+    </LinearLayout>
+</ScrollView>

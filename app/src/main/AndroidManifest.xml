@@ -1,0 +1,62 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.baidu.test.aop">
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+    <application android:allowBackup="false"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:name="com.baidu.test.aop.MyApplication"
+        >
+
+        <activity
+            android:name=".AnimationExampleActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TestDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".AnimationAlphaActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name=".AnimationScaleActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:name=".AnimationTranslateActivity" />
+        <activity android:name=".AnimationRotateActivity" />
+        <activity android:name=".FragmentTestActivity" />
+        <activity android:name=".ActivityManagerTest" />
+        <activity android:name=".LaunchModeTestActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".TestTabActvity"/>
+
+        <receiver
+            android:name=".MyReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.aop.test.myreceiver" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".MyService"></service>
+
+        <provider android:name=".MyProvider"
+            android:authorities="com.baidu.aop.test.MyProvider"
+            />
+    </application>
+
+</manifest>

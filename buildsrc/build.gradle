@@ -1,0 +1,31 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+dependencies {
+    compile gradleApi()//gradle sdk
+    compile localGroovy()//groovy sdk
+    compile 'com.android.tools.build:gradle:2.1.0'
+    compile 'javassist:javassist:3.12.0.GA'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+
+//group='com.baidu.test.aop'
+//version='1.0.18'
+//
+//uploadArchives {
+//    repositories {
+//        mavenDeployer {
+//            //提交到远程服务器：
+//            // repository(url: "http://www.xxx.com/repos") {
+//            //    authentication(userName: "admin", password: "admin")
+//            // }
+//            repository(url: uri('../repos'))
+//        }
+//    }
+//}
